@@ -835,10 +835,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-.grey-text {
-  color: #757575;
-}
-
+/*.grey-text {
+    color: $title-text-color;
+}*/
 .overlay1 {
   position: absolute;
   top: 0;
