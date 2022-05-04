@@ -835,6 +835,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.grey-text {
+  color: #757575;
+}
+
 .overlay1 {
   position: absolute;
   top: 0;
@@ -1097,8 +1101,8 @@ textarea:hover, textarea:focus {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) url(./../../images/header.jpg));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("./images/header.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
