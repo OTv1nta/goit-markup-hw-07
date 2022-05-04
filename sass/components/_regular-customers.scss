@@ -1,0 +1,27 @@
+.regular-customers 
+{
+	display: flex;
+	justify-content: space-between;
+	&__icons 
+    {
+		width: 170px;
+		height: 92px;
+		fill: $card-set-icon-color;
+		border: 1px solid $card-set-icon-color;
+		border-radius: 4px;
+		cursor: pointer;
+		&:hover 
+        {
+			fill: $accent-color;
+			border: 1px solid $accent-color;
+        }
+    }
+	&__logo 
+    {
+		margin-left: 32px;
+		margin-top: 16px;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
