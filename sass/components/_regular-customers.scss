@@ -2,10 +2,13 @@
 {
 	display: flex;
 	justify-content: space-between;
+    
 	&__icons 
     {
 		width: 170px;
 		height: 92px;
+		margin-bottom: 0;
+		margin-left: 0;
 		fill: $card-set-icon-color;
 		border: 1px solid $card-set-icon-color;
 		border-radius: 4px;

@@ -16,9 +16,9 @@
 
 <body>
   <header class="header-border">
-    <div class="container main-nav">
-      <nav class="main-nav">
-        <a class="main-nav__first-letter" href="/">Web<span class="main-nav__second-letter">Studio</span></a>
+    <div class="container logo">
+      <nav class="logo">
+        <a class="logo__web" href="/">Web<span class="logo--black">Studio</span></a>
 
         <ul class="site-nav list">
           <li class="site-nav__item">
@@ -63,7 +63,7 @@
         <div class="modal">
           <button data-modal-close class="modal__button">
             <svg class="" width="11" height="11">
-              <use href="./images/icons.svg#x">
+              <use href="./images/icons.svg#x"></use>
             </svg>
           </button>
           <form class="form js-speaker-form">
@@ -166,7 +166,7 @@
 
     <section class="divide section-one-padding">
       <div class="container">
-        <h2 class="divide-title">Чем мы занимаемся</h2>
+        <h2 class="divide-title-hide">Чем мы занимаемся</h2>
         <ul class="list img-section">
           <li class="img-section__what-we-do img-section__item">
             <img src="./images/close-up-image-programer-working-his-desk-office.jpg" alt="Программист за работой"
@@ -188,7 +188,7 @@
       </div>
     </section>
 
-    <section class="divide section page-our-team">
+    <section class="section page-our-team">
       <div class="container">
         <h2 class="divide-title">Наша команда</h2>
         <ul class="card-set list">
@@ -356,36 +356,36 @@
       </div>
     </section>
 
-    <section class="divide section">
+    <section class="section">
       <div class="container">
         <h2 class="divide-title">Постоянные клиенты</h2>
         <ul class="regular-customers list">
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo"></use>
             </svg>
           </li>
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo-1"></use>
             </svg>
           </li>
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo-2"></use>
             </svg>
           </li>
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo-3"></use>
             </svg>
           </li>
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo-4"></use>
             </svg>
           </li>
-          <li class="regular-customers__icons">
+          <li class="regular-customers__item regular-customers__icons">
             <svg class="regular-customers__logo" width="106" height="60">
               <use href="./images/icons.svg#Logo-5"></use>
             </svg>
@@ -399,8 +399,8 @@
     <div class="container">
       <div class="flex-box">
         <div class="logo-footer">
-          <div style="margin-bottom: 20px">
-            <a class="main-nav__first-letter" href="">Web<span class="main-nav__third-letter">Studio</span></a>
+          <div class="logo--footer-web">
+            <a class="logo__web" href="">Web<span class="logo--white">Studio</span></a>
           </div>
 
           <address>
@@ -418,31 +418,31 @@
 
         <div>
           <h2 class="header-footer">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="list list-button-footer">
-            <li class="list-button-footer__icons">
+          <ul class="list card-set">
+            <li class="card-set__icons-footer card-set--marg-icons">
               <a href="">
-                <svg class="list-button-footer__icon list-button-footer__color-icons" width="20" height="20">
+                <svg class="card-set__icon card-set--color-icons" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-button-footer__icons">
+            <li class="card-set__icons-footer">
               <a href="">
-                <svg class="list-button-footer__icon list-button-footer__color-icons" width="20" height="20">
+                <svg class="card-set__icon card-set--color-icons" width="20" height="20">
                   <use href="./images/icons.svg#Twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-button-footer__icons">
+            <li class="card-set__icons-footer">
               <a href="">
-                <svg class="list-button-footer__icon list-button-footer__color-icons" width="20" height="20">
+                <svg class="card-set__icon card-set--color-icons" width="20" height="20">
                   <use href="./images/icons.svg#Facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-button-footer__icons">
+            <li class="card-set__icons-footer">
               <a href="">
-                <svg class="list-button-footer__icon list-button-footer__color-icons" width="20" height="20">
+                <svg class="card-set__icon card-set--color-icons" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -452,12 +452,11 @@
         <div>
           <h2 class="header-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <div class="main-nav">
-            <input class="main-nav-footer__email" type="text" name="name" id="name" style="padding-left: 16px; font-size: 16px"
-              placeholder="E-mail" />
+            <input class="main-nav-footer__email" type="email" name="mail" id="email" placeholder="E-mail" />
             <div class="">
-              <button class="button-footer flex-box main-nav" style="margin-left: 10px">
+              <button class="button-footer main-nav">
                 Подписаться
-                <svg class="main-nav" width="24" height="24" style="margin-left: 10px">
+                <svg class="button-footer__logo" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -465,7 +464,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </footer>
   <script src="./js/modal.js"></script>

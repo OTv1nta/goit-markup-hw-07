@@ -1,14 +1,16 @@
 .feature-list 
 {
+
 	display: flex;
 	flex-wrap: wrap;
+
 	&__item 
     {
 		width: 270px;
-		&:first-child
-        { 
-			margin-left: 0;
-        }
+			&:first-child {
+				margin-left: 0;
+			}
+
     }
 		
 	
@@ -19,6 +21,7 @@
 	
 	&__title 
     {
+		text-align: left;
 		margin-top: 0;
 		margin-bottom: 10;
 		font-weight: 700;
